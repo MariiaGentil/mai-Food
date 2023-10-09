@@ -1,0 +1,496 @@
+body {
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.telaInicial{
+    background-color: #F9C9D3;
+    height: 100vh;
+    width: 100%;
+}
+
+.telaInicial img {
+    height: 200px;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.telaInicial h1 {
+    font-family: 'Pacifico', cursive;
+    color: #FFF;
+    font-size: 36px;
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.telaInicialInput {
+    height: 30px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.telaInicialInput::placeholder {
+    padding-left: 2px;
+}
+
+.telaInicialInput:focus , .telaInicialInput:active{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    color: grey;
+}
+
+.telaInicial button {
+    height: 25px;
+    width: 100px;
+    border: none;
+    color: grey;
+    border-radius: 5px;
+    background-color: #FFF;
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pointer:hover{
+    cursor: pointer;
+}
+
+.telaInicial p {
+    width: 250px;
+    font-size: 14px;
+    position: fixed;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #cd2367;
+    text-decoration: underline;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+
+
+header {
+    background: rgb(253,255,255);
+    background: linear-gradient(0deg, rgba(253,255,255,1) 0%, rgba(249,201,211,1) 30%);
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    height: 140px;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+header img {
+    height: 90px;
+    margin: 10px;
+    width: 90px;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 36px;
+    margin: 35px 0px;
+}
+
+main {
+    margin-top: 145px;
+    margin-bottom: 90px;
+    margin-left: 25px;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.opcoes {
+    height: 30px;
+    background-color: #cb4078cd;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #fff;
+    
+}
+
+.produtos {
+    display: flex;
+    position: relative;
+    overflow-x: scroll;
+    margin-bottom: 20px;
+}
+
+.produtos::-webkit-scrollbar {
+    display: none;
+}
+
+.produto {
+    
+    min-width: 150px;
+    width: 150px;
+    border-radius: 5px;
+    height: 200px;
+    margin-right: 20px;
+    position: relative;
+}
+
+.produto h1 {
+    text-align: center;
+    background-color: #ffffffc7;
+    margin-top: 165px;
+    font-size: 18px;
+}
+
+.produto h2 {
+    font-size: 18px;
+    bottom: 25px;
+    text-align: center;
+    color: #FFF;
+    font-weight: 300;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.produto h3 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #FFF;
+    font-weight: 300;
+    
+}
+.produto p {
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #FFF;
+    margin-left: 5px;
+    
+}
+
+.chocolate {
+    background-image: url(Img/donut-chocolate.jpg);
+    background-size: cover;
+    color: #451d18;
+}
+
+.morango {
+    background-image: url(Img/donut-morango.jpg);
+    background-size: cover;
+    color: #903845;
+}
+
+.coconut {
+    background-image: url(Img/donut-coconut.png);
+    background-size: cover;
+    color: #784812;
+}
+
+
+
+.buttons{
+    background-color: #fffffff0;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Source Sans 3', sans-serif;
+    position: absolute;
+    bottom: 7px;
+}
+
+
+.limao {
+    background-image: url(Img/bubble-tea-limao.png);
+    background-size: cover;
+    color: #3C7117;
+}
+
+.chocolateB {
+    background-image: url(Img/bubble-tea-chocolate.png);
+    background-size: cover;
+    color: #885544;
+}
+
+.framboesa {
+    background-image: url(Img/bubble-tea-framboesa.png);
+    background-size: cover;
+    color: #A1080D;
+}
+
+.baunilha {
+    background-image: url(Img/sorvete-baunilha.png);
+    background-size: cover;
+    color: #684e29;
+}
+
+.misto {
+    background-image: url(Img/sorvete-misto.png);
+    background-size: cover;
+    color: #7F4730;
+}
+
+.frutasvermelhas {
+    background-image: url(Img/sorvete-frutas-vermelhas.png);
+    background-size: cover;
+    color: #A1080D;
+}
+
+
+
+/* Configuração dos botões*/
+
+.voltar1 {
+    background-image: none;
+    left: 15px;
+}
+
+.confirmar1 {
+    background-image: none;
+    left: 70px;
+}
+
+.voltar2{
+    background-image: none;
+    left: 185px;
+}
+
+.confirmar2{
+    background-image: none;
+    left: 240px;
+}
+
+.voltar3{
+    background-image: none;
+    left: 355px;
+}
+
+.confirmar3{
+    background-image: none;
+    left: 410px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.esconder {
+    display: none;
+}
+
+footer {
+    background: rgb(249,201,211);
+    background: linear-gradient(0deg, rgba(249,201,211,1) 67%, rgba(253,255,255,1) 100%);
+    font-family: 'Pacifico', cursive;
+    display: flex;
+    height: 70px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.carrinhoButton {
+    height: 25px;
+    width: 200px;
+    border: none;
+    color: grey;
+    border-radius: 10px;
+    position: fixed;
+    top: 96%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.colorButton{
+    background-color: #cd2367;
+    color: #FFF;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.telaFinal {
+    background-color: #F9C9D3;
+    height: 100vh;
+    width: 100%;
+}
+
+.headerFinal {
+    display: flex;
+}
+
+.headerFinal img {
+    height: 90px;
+    margin-left: 10px;
+    margin-top: 20px;
+    
+}
+
+.headerFinal h1 {
+    width: 300px;
+    font-family: 'Pacifico', cursive;
+    color: #FFF;
+    font-size: 30px;
+    margin-top: 45px;
+}
+
+.buttonFinal {
+    border: none;
+    height: 5%;
+    width: 40%;
+    border-radius: 5px; 
+    position: absolute;
+    bottom: 10px;
+    left: 74%;
+    transform: translate(-50%, -50%)
+}
+
+.buttonVoltar {
+    border: none;
+    height: 5%;
+    width: 40%;
+    border-radius: 5px; 
+    position: absolute;
+    bottom: 10px;
+    left: 27%;
+    transform: translate(-50%, -50%)
+}
+
+.flex{
+    margin-top: 10px;
+    color: #FFF;
+    background-color: #cd236775;
+    display: flex;
+    position: relative;
+}
+
+.flex p {
+    font-family: 'Source Sans 3', sans-serif;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.flex button {
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    margin-left: 10px;
+    border-radius: 50px;
+    border: none;
+    color: #FFF;
+    margin-top: 8px;
+}
+
+.flex h3 {
+    font-family: 'Source Sans 3', sans-serif;
+    position: absolute;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    right: 65px;
+}
+
+.flex h4{
+    font-family: 'Source Sans 3', sans-serif;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.flex h5{
+    font-family: 'Source Sans 3', sans-serif;
+    position: absolute;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    right: 15px;
+}
+
+.remover{
+    background-image: url(Img/minus-icon.png);
+    background-size: cover;
+    position: absolute;
+    right: 10px;
+}
+
+.adicionar{
+    background-image: url(Img/plus-icon.png);
+    background-size: cover;
+    position: absolute;
+    right: 35px;
+}
+
+.pedidoFinalizado {
+    background-color: #F9C9D3;
+    height: 100vh;
+    width: 100%;
+}
+
+.pedidoFinalizado img {
+    height: 100px;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 25px ;
+    transform: translate(-50%)
+}
+
+.pedidoFinalizado h1 {
+    font-family: 'Pacifico', cursive;
+    color: #FFF;
+    font-size: 30px;
+    position: absolute;
+    left: 50%;
+    top: 120px;
+    transform: translate(-50%)
+}
+
+.pedidoDoUsuario{
+    background-color: #FFF;
+    width: 90%;
+    border-radius: 10px;
+    position: fixed;
+    left: 50%;
+    top: 165px;
+    transform: translate(-50%);
+    color: #cd2367;
+}
+
+.pedidoDoUsuario h2{
+    font-family: 'Source Sans 3', sans-serif;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.pedidoDoUsuario p {
+    font-family: 'Source Sans 3', sans-serif;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.total {
+    font-family: 'Source Sans 3', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+

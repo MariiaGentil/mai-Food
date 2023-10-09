@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="reset.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link href="Img/logo-Mai-Food-sem-fundo.png" rel="icon" type="image/x-icon"/>
+    <title>Mai Food</title>
+  </head>
+  <body>
+    <section class="telaInicial">
+      <img src="Img/logo-Mai-Food.jpg" />
+      <h1>Mai Food</h1>
+      <input
+        class="telaInicialInput"
+        placeholder="Digite seu nome de usuário..."
+      />
+      <p class="telaInicialMensagemErro esconder">
+        Digite seu nome de usuário corretamente
+      </p>
+      <button class="pointer" onclick="iniciarApp()">Confirmar</button>
+    </section>
+    <section class="conteudoPrincipal esconder">
+      <header>
+        <img src="Img/logo-Mai-Food.jpg" />
+        <h1>Mai Food</h1>
+      </header>
+      <main>
+        <div class="opcoes">
+          <h1>🍩 Donuts:</h1>
+        </div>
+        <section class="produtos">
+          <div
+            class="donuts produto chocolate pointer"
+            onclick="exibirProdutos('donuts', 'chocolate')"
+          >
+            <h1>Chocolate</h1>
+          </div>
+          <button
+            class="buttonVoltarDonuts buttons voltar1 chocolate esconder"
+            onclick="voltarButton('donuts', 'chocolate')"
+          >
+            Voltar
+          </button>
+          <button
+            class="buttonConfirmarDonuts buttons confirmar1 chocolate esconder"
+            onclick="confirmarButton('donuts', 'chocolate')"
+          >
+            Confirmar
+          </button>
+          <div
+            class="donuts produto morango pointer"
+            onclick="exibirProdutos('donuts', 'morango')"
+          >
+            <h1>Morango</h1>
+          </div>
+          <button
+            class="buttonVoltarDonuts buttons voltar2 morango esconder"
+            onclick="voltarButton('donuts', 'morango')"
+          >
+            Voltar
+          </button>
+          <button
+            class="buttonConfirmarDonuts buttons confirmar2 morango esconder"
+            onclick="confirmarButton('donuts', 'morango')"
+          >
+            Confirmar
+          </button>
+          <div
+            class="donuts produto coconut pointer"
+            onclick="exibirProdutos('donuts', 'coconut')"
+          >
+            <h1>Coco</h1>
+          </div>
+          <button
+            class="buttonVoltarDonuts buttons voltar3 coconut esconder"
+            onclick="voltarButton('donuts', 'coconut')"
+          >
+            Voltar
+          </button>
+          <button
+            class="buttonConfirmarDonuts buttons confirmar3 coconut esconder"
+            onclick="confirmarButton('donuts', 'coconut')"
+          >
+            Confirmar
+          </button>
+        </section>
+        <div class="opcoes">
+          <h1>🧋​ Bubble Tea:</h1>
+        </div>
+        <section class="produtos">
+          <div
+            class="bubbleTea produto limao pointer"
+            onclick="exibirProdutos('bubbleTea', 'limao')"
+          >
+            <h1>Limão</h1>
+          </div>
+          <button
+            class="buttonVoltarBubbleTea buttons voltar1 limao esconder"
+            onclick="voltarButton('bubbleTea', 'limao')"
+          >
+            Voltar
+          </button>
+          <button
+            class="buttonConfirmarBubbleTea buttons confirmar1 limao esconder"
+            onclick="confirmarButton('bubbleTea', 'limao')"
+          >
+            Confirmar
+          </button>
+          <div
+            class="bubbleTea produto chocolateB pointer"
+            onclick="exibirProdutos('bubbleTea', 'chocolate')"
+          >
+            <h1>Chocolate</h1>
+          </div>
+          <button
+            class="buttonVoltarBubbleTea buttons voltar2 chocolateB esconder"
+            onclick="voltarButton('bubbleTea', 'chocolate')"
+          >
+            Voltar
+          </button>
+          <button
+            class="buttonConfirmarBubbleTea buttons confirmar2 chocolateB esconder"
+            onclick="confirmarButton('bubbleTea', 'chocolate')"
+          >
+            Confirmar
+          </button>
+          <div
+            class="bubbleTea produto framboesa pointer"
+            onclick="exibirProdutos('bubbleTea', 'framboesa')"
+          >
+            <h1>Framboesa</h1>
+          </div>
+          <button
+            class="buttonVoltarBubbleTea buttons voltar3 framboesa esconder"
+            onclick="voltarButton('bubbleTea', 'framboesa')"
+          >
+            Voltar
+          </button>
+          <button
+            class="buttonConfirmarBubbleTea buttons confirmar3 framboesa esconder"
+            onclick="confirmarButton('bubbleTea', 'framboesa')"
+          >
+            Confirmar
+          </button>
+        </section>
+        <div class="opcoes">
+          <h1>🍨 Sorvete:</h1>
+        </div>
+        <section class="produtos">
+          <div
+            class="sorvete produto baunilha pointer"
+            onclick="exibirProdutos('sorvete', 'baunilha')"
+          >
+            <h1>Baunilha</h1>
+          </div>
+          <button
+            class="buttonVoltarSorvete buttons voltar1 baunilha esconder"
+            onclick="voltarButton('sorvete', 'baunilha')"
+          >
+            Voltar
+          </button>
+          <button
+            class="buttonConfirmarSorvete buttons confirmar1 baunilha esconder"
+            onclick="confirmarButton('sorvete', 'baunilha')"
+          >
+            Confirmar
+          </button>
+          <div
+            class="sorvete produto misto pointer"
+            onclick="exibirProdutos('sorvete', 'misto')"
+          >
+            <h1>Misto</h1>
+          </div>
+          <button
+            class="buttonVoltarSorvete buttons voltar2 misto esconder"
+            onclick="voltarButton('sorvete', 'misto')"
+          >
+            Voltar
+          </button>
+          <button
+            class="buttonConfirmarSorvete buttons confirmar2 misto esconder"
+            onclick="confirmarButton('sorvete', 'misto')"
+          >
+            Confirmar
+          </button>
+          <div
+            class="sorvete produto frutasvermelhas pointer"
+            onclick="exibirProdutos('sorvete', 'frutasvermelhas')"
+          >
+            <h1>Frutas Vermelhas</h1>
+          </div>
+          <button
+            class="buttonVoltarSorvete buttons voltar3 frutasvermelhas esconder"
+            onclick="voltarButton('sorvete', 'frutasvermelhas')"
+          >
+            Voltar
+          </button>
+          <button
+            class="buttonConfirmarSorvete buttons confirmar3 frutasvermelhas esconder"
+            onclick="confirmarButton('sorvete', 'frutasvermelhas')"
+          >
+            Confirmar
+          </button>
+        </section>
+      </main>
+      <footer>
+        <button class="carrinhoButton" onclick="confirmarPedido()">
+          Confirmar Pedido
+        </button>
+      </footer>
+    </section>
+    <section class="telaFinal esconder">
+      <div class="headerFinal">
+        <img src="Img/logo-Mai-Food.jpg" />
+        <h1 class="telaFinalNameUsuario">Pedido de :</h1>
+      </div>
+      <div class="telaFinalDChocolate flex"></div>
+      <div class="telaFinalDMorango flex"></div>
+      <div class="telaFinalDCoco flex"></div>
+      <div class="telaFinalBTLimao flex"></div>
+      <div class="telaFinalBTChocolate flex"></div>
+      <div class="telaFinalBTFramboesa flex"></div>
+      <div class="telaFinalSBaunilha flex"></div>
+      <div class="telaFinalSMisto flex"></div>
+      <div class="telaFinalSFrutasVermelhas flex"></div>
+      <button
+        class="buttonFinal pointer colorButton"
+        onclick="mostrarPedidoUsuario()"
+      >
+        Finalizar Pedido
+      </button>
+      <button
+        class="buttonVoltar pointer colorButton"
+        onclick="voltarTelaPedidos()"
+      >
+        Voltar
+      </button>
+    </section>
+    <section class="pedidoFinalizado esconder">
+      <img src="Img/logo-Mai-Food.jpg" />
+      <h1>Obrigado!</h1>
+      <div class="pedidoDoUsuario">
+        <h2>Seu pedido:</h2>
+        <div class="pedido"></div>
+        <h3 class="total"></h3>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
